@@ -1,4 +1,4 @@
-#Gerenciamento da implantação de alterações de associação de Impressora RPC para CVE-2021-1678 (KB4599464)
+#Gerenciamento da implantação de alterações de associação de Impressora RPC para CVE-2021-1678 (KB4599464)#
 
 CRÉDITOS PARA: https://support.microsoft.com/pt-br/topic/gerenciamento-da-implanta%C3%A7%C3%A3o-de-altera%C3%A7%C3%B5es-de-associa%C3%A7%C3%A3o-de-impressora-rpc-para-cve-2021-1678-kb4599464-12a69652-30b9-3d61-d9f7-7201623a8b25
 
@@ -8,15 +8,15 @@ Existe uma vulnerabilidade de bypass de segurança na forma como a vinculação 
 
 Para saber mais sobre a vulnerabilidade, consulte CVE-2021-1678 | Vulnerabilidade de Falsificação de Spooler de Impressão do Windows.
 
-#Tome medidas
+#Tome medidas#
 
-#Para proteger seu ambiente e evitar interrupções, você deve fazer o seguinte:
+#Para proteger seu ambiente e evitar interrupções, você deve fazer o seguinte:#
 
 Atualize todos os dispositivos de cliente e servidor instalando a atualização do Windows de 12 de janeiro de 2021 ou uma atualização posterior do Windows. Esteja ciente de que instalar a atualização do Windows não atenua totalmente a vulnerabilidade de segurança e pode impactar sua configuração atual de impressão. Você deve realizar a Etapa 2.
 
 Habilite o modo de Imposição no servidor de impressão.  O modo de Imposição será habilitado em todos os dispositivos Windows no futuro.
 
-#Cronograma das atualizações
+#Cronograma das atualizações#
 
 Essas atualizações do Windows serão lançadas em duas fases:
 A fase de implantação inicial das atualizações do Windows lançadas em ou após 12 de janeiro de 2021.
@@ -24,7 +24,7 @@ A fase de imposição das atualizações do Windows será lançada no futuro.
 12 de janeiro de 2021: Fase de Implantação Inicial
 A fase inicial de implantação começa com a atualização do Windows lançada em 12 de janeiro de 2021, fornecendo a capacidade dos clientes do servidor de permitir esse aumento do nível de segurança por conta própria com base na prontidão de seu ambiente.
 
-#Esta versão:
+#Esta versão:#
 
 Soluciona a CVE-2021-1678 (no modo Implantação definido como Desativado por padrão).
 
@@ -35,7 +35,7 @@ A mitigação consiste na instalação das atualizações do Windows em todos os
 14 de setembro de 2021: Fase de Imposição
 A versão faz a transição para a fase de imposição em 14 de setembro de 2021.  A fase Imposição impõe as alterações para solucionar o CVE-2021-1678, aumentando o nível de autorização sem ter que definir o valor do registro.
 
-#Orientação de instalação
+#Orientação de instalação#
 
 Antes de instalar esta atualização
 Você deve ter as seguintes atualizações necessárias instaladas antes de aplicar esta atualização. Se você usar o Windows Update, essas atualizações necessárias serão oferecidas automaticamente conforme necessário.
@@ -48,7 +48,7 @@ Para o Windows Server 2008 SP2, você deve ter instalado a atualização da pilh
 
 Os clientes devem adquirir a Atualização de Segurança Estendida (ESU) para versões locais do Windows Server 2008 SP2 ou Windows Server 2008 R2 SP1 após o término do suporte estendido em 14 de janeiro de 2020. Os clientes que compraram a ESU devem seguir os procedimentos em KB4522133 para continuar recebendo atualizações de segurança. Para obter mais informações sobre a ESU e quais edições têm suporte, consulte KB4497181.
 
-#Importante Você deve reiniciar seu dispositivo depois de instalar essas atualizações necessárias.
+#Importante Você deve reiniciar seu dispositivo depois de instalar essas atualizações necessárias.#
 
 Instale a atualização
 
@@ -59,12 +59,12 @@ Implante a atualização de 12 de janeiro de 2021 para todos os dispositivos de 
 Depois que todos os dispositivos de cliente e servidor foram atualizados, a proteção total pode ser ativada definindo o valor do registro como 1.
 
 
-#Etapa 1: instalar o Windows Update
+#Etapa 1: instalar o Windows Update#
 
 Instale a atualização do Windows de 12 de janeiro de 2021 ou uma atualização posterior do Windows para todos os dispositivos de cliente e de servidor.
 Atualizações de 12 de janeiro de 2021
 
-#Etapa 2: habilitar o modo de imposição
+#Etapa 2: habilitar o modo de imposição#
 
 Importante Esta seção, método ou tarefa contém etapas que descrevem como modificar o Registro. Entretanto, sérios problemas poderão ocorrer caso você modifique o Registro incorretamente. Portanto, siga essas etapas cuidadosamente. Para obter mais proteção, faça backup do Registro antes de modificá-lo. Dessa forma, você poderá restaurar o Registro se ocorrer um problema. Para saber mais sobre como fazer o backup e restaurar o Registro, consulte Como fazer o backup e restaurar o Registro no Windows.
 
@@ -86,7 +86,7 @@ Clique com o botão direito do mouse em RpcAuthnLevelPrivacyEnabled e clique em 
 
 Na caixa Dados do valor, digite 1 e clique em Ok.
 
-                Observação Esta atualização introduz suporte para o valor de Registro RpcAuthnLevelPrivacyEnabled para aumentar o nível de autorização para o IRemoteWinspool da impressora.
+*Observação Esta atualização introduz suporte para o valor de Registro RpcAuthnLevelPrivacyEnabled para aumentar o nível de autorização para o IRemoteWinspool da impressora.*
 
 Subchave do Registro
 
@@ -106,7 +106,7 @@ REG_DWORD
 
 0: não recomendado. Desativa o nível de autenticação de aumento para o IRemoteWinspool da impressora e seus dispositivos não estão protegidos.
 
-#Padrão
+#Padrão#
 
 Comportamento padrão após a instalação de atualizações quando a chave do Registro não está definida:
 
