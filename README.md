@@ -106,13 +106,10 @@ REG_DWORD
 
 0: não recomendado. Desativa o nível de autenticação de aumento para o IRemoteWinspool da impressora e seus dispositivos não estão protegidos.
 
-#  Padrão
+![image](https://github.com/alvaciroliveira/RpcAuthnLevelPrivacyEnabled/assets/129803614/a5ea26e0-24ec-402e-9102-692e328a51e0)
 
-Comportamento padrão após a instalação de atualizações quando a chave do Registro não está definida:
+![image](https://github.com/alvaciroliveira/RpcAuthnLevelPrivacyEnabled/assets/129803614/e2f02604-c813-4934-823f-f746eb163f69)
 
-As atualizações de 12 de janeiro de 2021 ou posteriores têm o comportamento padrão de 0 (zero) quando não são definidas.
-
-As atualizações de 14 de setembro de 2021 ou posteriores têm o comportamento padrão de 1 (um) quando não são definidas.
 
 É necessário reiniciar? Sim, uma reinicialização do dispositivo ou uma reinicialização do serviço de spooler é necessária.
 
