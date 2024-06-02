@@ -1,5 +1,7 @@
 #  Gerenciamento da implantação de alterações de associação de Impressora RPC para CVE-2021-1678 (KB4599464)
 
+Erro no compartilhamento de impressora do Windows baixe e execute: https://github.com/alvaciroliveira/RpcAuthnLevelPrivacyEnabled/blob/main/RpcAuthnLevelPrivacyEnabled.reg
+
 CRÉDITOS PARA: https://support.microsoft.com/pt-br/topic/gerenciamento-da-implanta%C3%A7%C3%A3o-de-altera%C3%A7%C3%B5es-de-associa%C3%A7%C3%A3o-de-impressora-rpc-para-cve-2021-1678-kb4599464-12a69652-30b9-3d61-d9f7-7201623a8b25
 
 Windows Server 2008 Service Pack 2 Windows Server 2008 R2 Service Pack 1 Windows Server 2012 Windows Server 2012 R2 Windows Server version 1809 Windows Server version 1903 Windows Server version 1909 Windows Server 2016, all editions Windows Server 2019 Windows Server version 2004 Windows Server version 20H2 Menos
@@ -8,9 +10,7 @@ Existe uma vulnerabilidade de bypass de segurança na forma como a vinculação 
 
 Para saber mais sobre a vulnerabilidade, consulte CVE-2021-1678 | Vulnerabilidade de Falsificação de Spooler de Impressão do Windows.
 
-#  Tome medidas
-
-#  Para proteger seu ambiente e evitar interrupções, você deve fazer o seguinte:
+#  *Tome medidas para proteger seu ambiente e evitar interrupções, você deve fazer o seguinte:*
 
 Atualize todos os dispositivos de cliente e servidor instalando a atualização do Windows de 12 de janeiro de 2021 ou uma atualização posterior do Windows. Esteja ciente de que instalar a atualização do Windows não atenua totalmente a vulnerabilidade de segurança e pode impactar sua configuração atual de impressão. Você deve realizar a Etapa 2.
 
@@ -59,12 +59,12 @@ Implante a atualização de 12 de janeiro de 2021 para todos os dispositivos de 
 Depois que todos os dispositivos de cliente e servidor foram atualizados, a proteção total pode ser ativada definindo o valor do registro como 1.
 
 
-#  Etapa 1: instalar o Windows Update
+#  Etapa 1: Instalar o Windows Update
 
 Instale a atualização do Windows de 12 de janeiro de 2021 ou uma atualização posterior do Windows para todos os dispositivos de cliente e de servidor.
 Atualizações de 12 de janeiro de 2021
 
-#  Etapa 2: habilitar o modo de imposição
+#  Etapa 2: Habilitar o modo de imposição
 
 Importante Esta seção, método ou tarefa contém etapas que descrevem como modificar o Registro. Entretanto, sérios problemas poderão ocorrer caso você modifique o Registro incorretamente. Portanto, siga essas etapas cuidadosamente. Para obter mais proteção, faça backup do Registro antes de modificá-lo. Dessa forma, você poderá restaurar o Registro se ocorrer um problema. Para saber mais sobre como fazer o backup e restaurar o Registro, consulte Como fazer o backup e restaurar o Registro no Windows.
 
