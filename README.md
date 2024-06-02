@@ -65,9 +65,9 @@ REG_DWORD
 
 #  Dados
 
-1: habilita o Modo de Imposição. Antes de ativar o modo de Imposição do lado do servidor, certifique-se de que todos os dispositivos clientes instalaram a atualização do Windows lançada em 12 de janeiro de 2021 ou uma atualização posterior do Windows. Essa correção aumenta o nível de autorização para a interface RPC IRemoteWinspool da impressora e adiciona uma nova política e valor de registro no lado do servidor para obrigar o cliente a usar o novo nível de autorização se o modo de Imposição for aplicado. Se o dispositivo cliente não tiver a atualização de segurança de 12 de janeiro de 2021 ou uma atualização posterior do Windows aplicada, a experiência de impressão será quebrada quando o cliente se conectar ao servidor através da interface IRemoteWinspool.
++  1: habilita o Modo de Imposição. Antes de ativar o modo de Imposição do lado do servidor, certifique-se de que todos os dispositivos clientes instalaram a atualização do Windows lançada em 12 de janeiro de 2021 ou uma atualização posterior do Windows. Essa correção aumenta o nível de autorização para a interface RPC IRemoteWinspool da impressora e adiciona uma nova política e valor de registro no lado do servidor para obrigar o cliente a usar o novo nível de autorização se o modo de Imposição for aplicado. Se o dispositivo cliente não tiver a atualização de segurança de 12 de janeiro de 2021 ou uma atualização posterior do Windows aplicada, a experiência de impressão será quebrada quando o cliente se conectar ao servidor através da interface IRemoteWinspool.
 
-0: não recomendado. Desativa o nível de autenticação de aumento para o IRemoteWinspool da impressora e seus dispositivos não estão protegidos.
++ 0: não recomendado. Desativa o nível de autenticação de aumento para o IRemoteWinspool da impressora e seus dispositivos não estão protegidos.
 
 ![image](https://github.com/alvaciroliveira/RpcAuthnLevelPrivacyEnabled/assets/129803614/a5ea26e0-24ec-402e-9102-692e328a51e0)
 
